@@ -4,6 +4,10 @@ body{
     margin: 0;
     padding: 0;
 }
+h2{
+    margin-top: 0;
+    text-align: center;
+}
 header, footer{
     background-color: #333;
     color: #fff;
@@ -23,6 +27,7 @@ main{
     padding: 20px;
     border: 1px solid #ddd;
     text-align: center;
+    border-radius: 12px;
 }
 @media (min-width: 768px) {
     .grid{
