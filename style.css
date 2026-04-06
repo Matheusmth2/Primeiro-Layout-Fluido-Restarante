@@ -71,7 +71,7 @@ main{
         #6c63ff
     );
     animation: girarBorda 4s linear infinite;
-    z-index: 0;
+    z-index: -1;
 }
 
 .Reserva h2 {
