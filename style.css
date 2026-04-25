@@ -31,6 +31,8 @@ footer {
 
 main {
     padding: 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .grid {
@@ -88,7 +90,7 @@ main {
             transparent,
             transparent,
             #6c63ff);
-    animation: girarBorda 4s linear infinite;
+    animation: girarBorda 8s linear infinite;
     z-index: -1;
 }
 
