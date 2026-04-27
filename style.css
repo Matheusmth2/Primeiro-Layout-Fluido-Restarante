@@ -35,6 +35,13 @@ main {
     margin: auto;
 }
 
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 12px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
