@@ -1,26 +1,27 @@
+/* ESTILO GLOBAL */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Espaçamento entre linhas */
     margin: 0;
     padding: 0;
 }
-
+/* Título principal */
 h2 {
     margin-top: 0;
-    text-align: center;
+    text-align: center; /* Alinhamento do texto */
 }
-
+/* Subtítulo dentro da seção reserva */
 .reserva h3 {
     margin-top: 0;
     text-align: center;
     color: #6c63ff;
 }
-
+/* Paragráfos */
 p {
     margin: 10px 0;
     text-align: center;
 }
-
+/* Cabeçalho e rodapé */
 header,
 footer {
     background-color: #333;
@@ -28,26 +29,26 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
+/* Conteúdo principal */
 main {
     padding: 20px;
     max-width: 1100px;
-    margin: auto;
+    margin: auto; /* Centraliza */
 }
-
+/* Seções */
 section {
     margin-bottom: 50px;
     padding: 20px;
     background: #fafafa;
     border-radius: 12px;
 }
-
+/* GRID RESPONSIVO */
 .grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 coluna padrão */
     gap: 20px;
 }
-
+/* Itens do grid */
 .grid-item {
     background-color: #f4f4f4;
     padding: 20px;
@@ -55,7 +56,7 @@ section {
     text-align: center;
     border-radius: 12px;
 }
-
+/* Efeito hover nos itens */
 .grid-item:hover {
     transform: scale(1.03);
     transition: 0.3s;
@@ -72,7 +73,7 @@ section {
         grid-template-columns: repeat(4, 1fr);
     }
 }
-
+/* FORMULÁRIO DE RESERVA */
 .reserva {
     position: relative;
     background: #ffffff;
@@ -84,7 +85,7 @@ section {
     overflow: hidden;
     z-index: 1;
 }
-
+/* Borda animada */
 .reserva::before {
     content: '';
     position: absolute;
@@ -100,13 +101,13 @@ section {
     animation: girarBorda 8s linear infinite;
     z-index: -1;
 }
-
+/* Título do formulário */
 .reserva h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
 }
-
+/* Conteúdo interno do card */
 .reserva::after {
     content: '';
     position: absolute;
@@ -115,7 +116,7 @@ section {
     border-radius: 10px;
     z-index: -1;
 }
-
+/* Animação da borda */
 @keyframes girarBorda {
     from {
         transform: rotate(0deg);
@@ -125,7 +126,7 @@ section {
         transform: rotate(360deg);
     }
 }
-
+/* Labels do formulário */
 .reserva label {
     display: block;
     margin-bottom: 5px;
@@ -133,7 +134,7 @@ section {
     color: #555;
     font-weight: bold;
 }
-
+/* Inputs */
 .reserva input {
     width: 100%;
     padding: 10px;
@@ -149,7 +150,7 @@ section {
     border-color: #6c63ff;
     box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
 }
-
+/* Botão */
 .reserva button {
     width: 100%;
     margin-top: 20px;
