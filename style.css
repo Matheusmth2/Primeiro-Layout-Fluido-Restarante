@@ -116,6 +116,34 @@ section {
     border-radius: 10px;
     z-index: -1;
 }
+/* 
+ORDEM DE CAMADAS (STACKING) NA .reserva
+
+A .reserva cria um contexto de empilhamento por causa do position: relative
+e z-index: 1.
+
+Dentro dela, a ordem de quem aparece por cima é:
+
+1) .reserva::before
+   - z-index: -1
+   - Fica mais ao fundo
+   - Responsável pela borda animada
+
+2) .reserva::after
+   - z-index: -1
+   - Fica acima do ::before porque vem depois no código
+   - Cria o fundo branco interno (efeito de "card")
+
+3) Conteúdo da .reserva (inputs, textos, botão)
+   - z-index: auto (equivale a 0)
+   - Fica acima dos pseudo-elementos
+
+Resumo (de trás para frente):
+::before → ::after → conteúdo
+
+Obs:
+Se o ::after tivesse z-index maior (ex: 1), ele cobriria todo o conteúdo.
+*/
 /* Animação da borda */
 @keyframes girarBorda {
     from {
