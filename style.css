@@ -1,3 +1,7 @@
+/* Scroll suave para links internos */
+html {
+    scroll-behavior: smooth;
+}
 /* ESTILO GLOBAL */
 body {
     font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
@@ -10,6 +14,45 @@ h2 {
     margin-top: 0;
     text-align: center; /* Alinhamento do texto */
 }
+
+#darkModeBtn {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: auto;
+}
+
+#darkModeBtn:hover {
+    background: #574fd6;
+}
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark section {
+    background: #1e1e1e;
+}
+/* Navegação */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #6c63ff;
+}
+
 /* Subtítulo dentro da seção reserva */
 .reserva h3 {
     margin-top: 0;

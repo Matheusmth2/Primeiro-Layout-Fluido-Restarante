@@ -12,10 +12,26 @@
     <!-- Cabeçalho principal -->
     <header>
         <h1>Restaurante Matheus</h1>
+
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+            <a href="#reserva">Reserva</a>
+        </nav>
+
+        <button id="darkModeBtn">🌙</button>
+        
+        <script>
+            const btn = document.getElementById('darkModeBtn');
+            btn.addEventListener('click', () => {
+                document.body.classList.toggle('dark');
+            });
+        </script>
     </header>
     <main>
         <!-- Seção de menu -->
-        <section class="menu">
+        <section class="menu" id="menu">
             <h2>Bem-vindo ao Restaurante Matheus!</h2>
             <h3>Nosso Menu:</h3>
             <div class="grid">
@@ -27,7 +43,7 @@
         </section>
 
         <!-- Contatos -->
-        <section class="contatos">
+        <section class="contatos" id="contato">
             <h2>Nossos Contatos</h2>
             <address>
                 <p>Endereço: Rua João, 123 - Cidade, Estado</p>
@@ -37,13 +53,13 @@
         </section>
 
         <!-- Sobre -->
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <h2>Sobre Nós</h2>
             <p>Informações sobre o restaurante, sua história e missão.</p>
         </section>
 
         <!-- Fotos dos pratos -->
-        <section class="fotos">
+        <section class="fotos" id="fotos">
             <h2>Fotos Dos Nossos Pratos</h2>
             <div class="grid">
                 <div class="grid-item">Foto 1</div>
@@ -54,7 +70,7 @@
         </section>
 
         <!-- Formulário de reserva -->
-        <form class="reserva">
+        <form class="reserva" id="reserva">
             <h3>Reserva</h3>
             <fieldset>
                 <legend>Faça Sua Reserva</legend>
